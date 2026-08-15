@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rastro Sistemas e Tecnologias — Serviços de TI, desenvolvimento de software, aplicativos e rastreamento veicular avançado em Belo Horizonte e RMBH, com suporte remoto nacional e internacional.">
+  <title>Rastro Sistemas e Tecnologias | A inteligência que move o seu negócio</title>
+  <link rel="icon" type="image/png" href="img/logo-rastro.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-item">📍 Belo Horizonte &amp; RMBH</span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-item">📞 <a href="tel:+5531985074136">(31) 98507-4136</a></span>
+        <span class="topbar-item">✉️ <a href="mailto:rastrosistemasetecnologia@gmail.com">rastrosistemasetecnologia@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-rastro.png" alt="Rastro Sistemas e Tecnologias" class="brand-logo">
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link" data-page="index.html">Início</a>
+        <div class="nav-item has-dropdown">
+          <a href="servicos.html" class="nav-link" data-page="servicos.html">Serviços <span class="caret">▼</span></a>
+          <div class="dropdown">
+            <a href="servicos.html#ti">
+              <span class="d-icon">🖥️</span>
+              <span><span class="d-label">TI &amp; Infraestrutura</span><span class="d-sub">Suporte, servidores, redes</span></span>
+            </a>
+            <a href="servicos.html#dev">
+              <span class="d-icon">💻</span>
+              <span><span class="d-label">Desenvolvimento de Software</span><span class="d-sub">Sistemas, apps, APIs</span></span>
+            </a>
+            <a href="servicos.html#eletro">
+              <span class="d-icon">🔌</span>
+              <span><span class="d-label">Eletrônica &amp; Infra</span><span class="d-sub">Bancada, rede, rack</span></span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="rastreamento.html" class="nav-link" data-page="rastreamento.html">Rastreamento <span class="caret">▼</span></a>
+          <div class="dropdown">
+            <a href="rastreamento.html#planos">
+              <span class="d-icon">🚗</span>
+              <span><span class="d-label">Planos</span><span class="d-sub">Anual, mensal, frota</span></span>
+            </a>
+            <a href="rastreamento.html#app">
+              <span class="d-icon">📱</span>
+              <span><span class="d-label">App Celular &amp; Tag</span><span class="d-sub">Rastreador no smartphone</span></span>
+            </a>
+            <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener">
+              <span class="d-icon">🛰️</span>
+              <span><span class="d-label">Plataforma do Cliente</span><span class="d-sub">Acessar o sistema ao vivo</span></span>
+            </a>
+          </div>
+        </div>
+        <a href="precos.html" class="nav-link" data-page="precos.html">Preços</a>
+        <a href="sobre.html" class="nav-link" data-page="sobre.html">Sobre</a>
+        <a href="contato.html" class="nav-link" data-page="contato.html">Contato</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Área do Cliente</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="m-link" data-page="index.html"><span class="m-icon">🏠</span> Início</a></li>
+      <li>
+        <a href="servicos.html" class="m-link" data-page="servicos.html"><span class="m-icon">🛠️</span> Serviços</a>
+        <div class="m-sub">
+          <a href="servicos.html#ti" data-close>TI &amp; Infraestrutura</a>
+          <a href="servicos.html#dev" data-close>Desenvolvimento de Software</a>
+          <a href="servicos.html#eletro" data-close>Eletrônica &amp; Infra</a>
+        </div>
+      </li>
+      <li>
+        <a href="rastreamento.html" class="m-link" data-page="rastreamento.html"><span class="m-icon">📡</span> Rastreamento</a>
+        <div class="m-sub">
+          <a href="rastreamento.html#planos" data-close>Planos</a>
+          <a href="rastreamento.html#app" data-close>App Celular &amp; Tag</a>
+          <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" data-close>Plataforma do Cliente</a>
+        </div>
+      </li>
+      <li><a href="precos.html" class="m-link" data-page="precos.html"><span class="m-icon">💰</span> Preços</a></li>
+      <li><a href="sobre.html" class="m-link" data-page="sobre.html"><span class="m-icon">🏢</span> Sobre</a></li>
+      <li><a href="contato.html" class="m-link" data-page="contato.html"><span class="m-icon">📞</span> Contato</a></li>
+    </ul>
+    <div class="m-cta">
+      <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-block">Área do Cliente</a>
+      <a href="https://wa.me/5531985074136" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">WhatsApp: (31) 98507-4136</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">RASTRO SISTEMAS E TECNOLOGIAS</p>
+        <h1 class="hero-title">A inteligência que move <span>o seu negócio</span></h1>
+        <p class="hero-subtitle">
+          Serviços de TI, desenvolvimento de software e aplicativos, e rastreamento
+          veicular avançado. Atendimento em Belo Horizonte, RMBH e suporte remoto
+          nacional e internacional.
+        </p>
+        <div class="hero-actions">
+          <a href="contato.html" class="btn btn-primary btn-lg">Solicitar Orçamento</a>
+          <a href="precos.html" class="btn btn-outline btn-lg">Ver Tabela de Preços</a>
+        </div>
+        <ul class="hero-badges">
+          <li>Serviços de TI</li>
+          <li>Desenvolvimento de Software</li>
+          <li>Rastreamento Avançado</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="map-card">
+          <div class="map-dot map-dot-1"></div>
+          <div class="map-dot map-dot-2"></div>
+          <div class="map-line"></div>
+          <div class="map-vehicle">🚚</div>
+          <div class="live-tag"><span class="live-dot"></span> AO VIVO</div>
+          <div class="chip chip-pos">
+            <span>Última posição</span>
+            <strong>BH · Av. Afonso Pena</strong>
+          </div>
+          <div class="chip chip-speed">
+            <span>Velocidade</span>
+            <strong>0 km/h</strong>
+          </div>
+          <div class="chip chip-battery">
+            <span>Bateria</span>
+            <strong>98%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-item"><strong>Belo Horizonte</strong><span>+ Região Metropolitana</span></div>
+      <div class="stat-item"><strong>Suporte Global</strong><span>Remoto Nacional e Internacional</span></div>
+      <div class="stat-item"><strong>24/7</strong><span>Monitoramento e suporte técnico</span></div>
+      <div class="stat-item"><strong>+1.000</strong><span>Serviços prestados</span></div>
+    </div>
+  </section>
+
+  <!-- NAVEGAÇÃO POR ÍCONES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Navegue pelo site</p>
+        <h2 class="section-title">Escolha um destino</h2>
+        <p class="section-desc">Toque em um ícone para abrir a página que você precisa.</p>
+      </div>
+
+      <div class="icon-grid">
+        <a href="servicos.html" class="icon-card reveal">
+          <div class="ic">🖥️</div>
+          <h3>Serviços</h3>
+          <p>TI, software e eletrônica em um só lugar</p>
+          <span class="go">Abrir página →</span>
+        </a>
+        <a href="rastreamento.html" class="icon-card reveal">
+          <div class="ic">🚗</div>
+          <h3>Rastreamento</h3>
+          <p>Planos e telemetria veicular avançada</p>
+          <span class="go">Abrir página →</span>
+        </a>
+        <a href="precos.html" class="icon-card reveal">
+          <div class="ic">💰</div>
+          <h3>Preços</h3>
+          <p>Tabela oficial 2026, sempre atualizada</p>
+          <span class="go">Abrir página →</span>
+        </a>
+        <a href="sobre.html" class="icon-card reveal">
+          <div class="ic">🏢</div>
+          <h3>Sobre</h3>
+          <p>Conheça a Rastro por dentro</p>
+          <span class="go">Abrir página →</span>
+        </a>
+        <a href="contato.html" class="icon-card reveal">
+          <div class="ic">📞</div>
+          <h3>Contato</h3>
+          <p>Fale com a equipe pelo WhatsApp</p>
+          <span class="go">Abrir página →</span>
+        </a>
+        <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="icon-card reveal">
+          <div class="ic">🛰️</div>
+          <h3>Área do Cliente</h3>
+          <p>Entre na plataforma de rastreamento</p>
+          <span class="go">Abrir plataforma →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section class="section section-alt" id="servicos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">O que fazemos</p>
+        <h2 class="section-title">Soluções completas em tecnologia</h2>
+        <p class="section-desc">
+          Unimos infraestrutura de TI, engenharia de software e telemetria avançada
+          em uma única empresa.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <div class="pillar-icon">🖥️</div>
+          <h3>TI &amp; Infraestrutura</h3>
+          <p>Suporte e manutenção de computadores, servidores, redes e equipamentos, com contratos mensais e SLA definido.</p>
+          <ul class="pillar-list">
+            <li>Contratos mensais de suporte (Níveis 1, 2 e 3)</li>
+            <li>Servidores, redes estruturadas e racks</li>
+            <li>Formatação, limpeza e reparos</li>
+            <li>Suporte remoto global</li>
+          </ul>
+          <a href="servicos.html#ti" class="btn btn-outline">Ver detalhes</a>
+        </article>
+
+        <article class="pillar pillar-featured reveal">
+          <div class="pillar-icon">💻</div>
+          <h3>Desenvolvimento de Software</h3>
+          <p>Sistemas sob medida, aplicativos Android, APIs e automações que impulsionam a sua operação.</p>
+          <ul class="pillar-list">
+            <li>Sistemas de gestão, estoque, PDV e chamados</li>
+            <li>Aplicativos Android sob medida</li>
+            <li>Processos automatizados e integrações via API</li>
+            <li>Projetos de hardware e firmware</li>
+          </ul>
+          <a href="servicos.html#dev" class="btn btn-primary">Ver detalhes</a>
+        </article>
+
+        <article class="pillar reveal">
+          <div class="pillar-icon">📡</div>
+          <h3>Rastreamento &amp; Telemetria</h3>
+          <p>Monitoramento veicular em tempo real com plataforma própria, videotelemetria e gestão de frota.</p>
+          <ul class="pillar-list">
+            <li>Plataforma web e aplicativo</li>
+            <li>Rastreamento por app de celular</li>
+            <li>Chips IoT e equipamentos de diversas marcas</li>
+            <li>Videotelemetria e alertas inteligentes</li>
+          </ul>
+          <a href="rastreamento.html" class="btn btn-outline">Ver planos</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS (destaque) -->
+  <section class="section" id="rastreamento">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Rastreamento &amp; Telemetria</p>
+        <h2 class="section-title">Planos em destaque</h2>
+        <p class="section-desc">
+          Do veículo de passeio à frota corporativa. Acesse a plataforma web e o app
+          com rotas, cercas e suporte a guincho e pronta resposta nacional.
+        </p>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan plan-featured reveal">
+          <p class="plan-tag">Mais popular</p>
+          <h3 class="plan-name">Plano Anual</h3>
+          <p class="plan-price"><strong>R$ 49,90</strong><span>/mês · 12x no cartão</span></p>
+          <ul class="plan-features">
+            <li>Rastreador em comodato grátis</li>
+            <li>Plataforma web + app</li>
+            <li>Rotas, cercas e geofences</li>
+            <li>Suporte a guincho e pronta resposta nacional</li>
+          </ul>
+          <a href="rastreamento.html#planos" class="btn btn-primary btn-block">Contratar</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan-name">Plano Mensal</h3>
+          <p class="plan-price"><strong>R$ 59,90</strong><span>/mês/placa · sem fidelidade</span></p>
+          <ul class="plan-features">
+            <li>1 a 3 placas</li>
+            <li>Equipamento próprio ou avulso (módulo R$ 220)</li>
+            <li>Plataforma web + app</li>
+            <li>Sem fidelidade</li>
+          </ul>
+          <a href="rastreamento.html#planos" class="btn btn-outline btn-block">Contratar</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan-name">Plano Frota</h3>
+          <p class="plan-price"><strong>R$ 5,90</strong><span>/mês/placa adicional</span></p>
+          <ul class="plan-features">
+            <li>Acima de 3 placas</li>
+            <li>Desconto progressivo corporativo</li>
+            <li>Gestão de frota completa</li>
+            <li>A partir do 4º veículo</li>
+          </ul>
+          <a href="rastreamento.html#planos" class="btn btn-outline btn-block">Contratar</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="reveal">Pronto para mover o seu negócio?</h2>
+      <p class="reveal">Fale com a Rastro pelo WhatsApp ou solicite um orçamento sem compromisso.</p>
+      <div class="cta-actions reveal">
+        <a href="contato.html" class="btn btn-primary btn-lg">Fale com a gente</a>
+        <a href="https://wa.me/5531985074136" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">WhatsApp: (31) 98507-4136</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="brand brand-light">
+          <img src="img/logo-rastro.png" alt="Rastro Sistemas e Tecnologias" class="brand-logo brand-logo-footer">
+        </a>
+        <p class="footer-text">"A inteligência que move o seu negócio." Serviços de TI, desenvolvimento de software e rastreamento veicular avançado.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="rastreamento.html">Rastreamento</a></li>
+          <li><a href="precos.html">Preços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Acesso rápido</h4>
+        <ul class="footer-links">
+          <li><a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener">Área do Cliente ↗</a></li>
+          <li><a href="https://wa.me/5531985074136" target="_blank" rel="noopener">WhatsApp ↗</a></li>
+          <li><a href="tel:+5531985074136">(31) 98507-4136</a></li>
+          <li><a href="tel:+553195804715">(31) 95804-715</a></li>
+          <li><a href="mailto:rastrosistemasetecnologia@gmail.com">rastrosistemasetecnologia@gmail.com</a></li>
+          <li><span>Belo Horizonte &amp; RMBH</span></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Rastro Sistemas e Tecnologias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

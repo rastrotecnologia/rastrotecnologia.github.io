@@ -1,0 +1,10 @@
+# arquivos gerados
+deploy_html/
+__pycache__/
+
+# arquivos sensiveis / descartaveis
+client_secret*.json
+gs_*.py
+deploy_sites.py
+rastro-sites.html
+modelo_precos.csv

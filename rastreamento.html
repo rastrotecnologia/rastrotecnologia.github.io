@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planos de rastreamento veicular da Rastro Sistemas e Tecnologias — anual, mensal, frota, app celular e tag GPS. BH e RMBH.">
+  <title>Rastreamento | Rastro Sistemas e Tecnologias</title>
+  <link rel="icon" type="image/png" href="img/logo-rastro.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-item">📍 Belo Horizonte &amp; RMBH</span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-item">📞 <a href="tel:+5531985074136">(31) 98507-4136</a></span>
+        <span class="topbar-item">✉️ <a href="mailto:rastrosistemasetecnologia@gmail.com">rastrosistemasetecnologia@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-rastro.png" alt="Rastro Sistemas e Tecnologias" class="brand-logo">
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link" data-page="index.html">Início</a>
+        <div class="nav-item has-dropdown">
+          <a href="servicos.html" class="nav-link" data-page="servicos.html">Serviços <span class="caret">▼</span></a>
+          <div class="dropdown">
+            <a href="servicos.html#ti"><span class="d-icon">🖥️</span><span><span class="d-label">TI &amp; Infraestrutura</span><span class="d-sub">Suporte, servidores, redes</span></span></a>
+            <a href="servicos.html#dev"><span class="d-icon">💻</span><span><span class="d-label">Desenvolvimento de Software</span><span class="d-sub">Sistemas, apps, APIs</span></span></a>
+            <a href="servicos.html#eletro"><span class="d-icon">🔌</span><span><span class="d-label">Eletrônica &amp; Infra</span><span class="d-sub">Bancada, rede, rack</span></span></a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="rastreamento.html" class="nav-link" data-page="rastreamento.html">Rastreamento <span class="caret">▼</span></a>
+          <div class="dropdown">
+            <a href="rastreamento.html#planos"><span class="d-icon">🚗</span><span><span class="d-label">Planos</span><span class="d-sub">Anual, mensal, frota</span></span></a>
+            <a href="rastreamento.html#app"><span class="d-icon">📱</span><span><span class="d-label">App Celular &amp; Tag</span><span class="d-sub">Rastreador no smartphone</span></span></a>
+            <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener"><span class="d-icon">🛰️</span><span><span class="d-label">Plataforma do Cliente</span><span class="d-sub">Acessar o sistema ao vivo</span></span></a>
+          </div>
+        </div>
+        <a href="precos.html" class="nav-link" data-page="precos.html">Preços</a>
+        <a href="sobre.html" class="nav-link" data-page="sobre.html">Sobre</a>
+        <a href="contato.html" class="nav-link" data-page="contato.html">Contato</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Área do Cliente</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="m-link" data-page="index.html"><span class="m-icon">🏠</span> Início</a></li>
+      <li>
+        <a href="servicos.html" class="m-link" data-page="servicos.html"><span class="m-icon">🛠️</span> Serviços</a>
+        <div class="m-sub">
+          <a href="servicos.html#ti" data-close>TI &amp; Infraestrutura</a>
+          <a href="servicos.html#dev" data-close>Desenvolvimento de Software</a>
+          <a href="servicos.html#eletro" data-close>Eletrônica &amp; Infra</a>
+        </div>
+      </li>
+      <li>
+        <a href="rastreamento.html" class="m-link" data-page="rastreamento.html"><span class="m-icon">📡</span> Rastreamento</a>
+        <div class="m-sub">
+          <a href="rastreamento.html#planos" data-close>Planos</a>
+          <a href="rastreamento.html#app" data-close>App Celular &amp; Tag</a>
+          <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" data-close>Plataforma do Cliente</a>
+        </div>
+      </li>
+      <li><a href="precos.html" class="m-link" data-page="precos.html"><span class="m-icon">💰</span> Preços</a></li>
+      <li><a href="sobre.html" class="m-link" data-page="sobre.html"><span class="m-icon">🏢</span> Sobre</a></li>
+      <li><a href="contato.html" class="m-link" data-page="contato.html"><span class="m-icon">📞</span> Contato</a></li>
+    </ul>
+    <div class="m-cta">
+      <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-block">Área do Cliente</a>
+      <a href="https://wa.me/5531985074136" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">WhatsApp: (31) 98507-4136</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero-eyebrow">Rastreamento &amp; Telemetria</p>
+      <h1>Planos de rastreamento <span>veicular</span></h1>
+      <p>Do veículo de passeio à frota corporativa, com plataforma web e app de monitoramento em tempo real.</p>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="section" id="planos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Escolha seu plano</p>
+        <h2 class="section-title">Planos de rastreamento</h2>
+        <p class="section-desc">
+          Rotas, cercas e geofences, alertas inteligentes e suporte a guincho e pronta resposta nacional.
+        </p>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan plan-featured reveal">
+          <p class="plan-tag">Mais popular</p>
+          <h3 class="plan-name">Plano Anual</h3>
+          <p class="plan-price"><strong>R$ 49,90</strong><span>/mês · 12x no cartão</span></p>
+          <ul class="plan-features">
+            <li>Rastreador em comodato grátis</li>
+            <li>Plataforma web + app</li>
+            <li>Rotas, cercas e geofences</li>
+            <li>Suporte a guincho e pronta resposta nacional</li>
+          </ul>
+          <a href="contato.html" class="btn btn-primary btn-block">Contratar</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan-name">Plano Mensal</h3>
+          <p class="plan-price"><strong>R$ 59,90</strong><span>/mês/placa · sem fidelidade</span></p>
+          <ul class="plan-features">
+            <li>1 a 3 placas</li>
+            <li>Equipamento próprio ou avulso (módulo R$ 220)</li>
+            <li>Plataforma web + app</li>
+            <li>Sem fidelidade</li>
+          </ul>
+          <a href="contato.html" class="btn btn-outline btn-block">Contratar</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan-name">Plano Frota</h3>
+          <p class="plan-price"><strong>R$ 5,90</strong><span>/mês/placa adicional</span></p>
+          <ul class="plan-features">
+            <li>Acima de 3 placas</li>
+            <li>Desconto progressivo corporativo</li>
+            <li>Gestão de frota completa</li>
+            <li>A partir do 4º veículo</li>
+          </ul>
+          <a href="contato.html" class="btn btn-outline btn-block">Contratar</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan-name">App Celular</h3>
+          <p class="plan-price"><strong>R$ 24,90</strong><span>/mês/dispositivo</span></p>
+          <ul class="plan-features">
+            <li>Transforma o smartphone em rastreador</li>
+            <li>Monitoramento em tempo real</li>
+            <li>Âmbito nacional e internacional</li>
+            <li>Sem equipamento físico</li>
+          </ul>
+          <a href="contato.html" class="btn btn-outline btn-block">Contratar</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan-name">Tag GPS/Bluetooth</h3>
+          <p class="plan-price"><strong>R$ 29,90</strong><span>/mês/tag</span></p>
+          <ul class="plan-features">
+            <li>Monitora ativos, ferramentas e cargas</li>
+            <li>Tag avulsa: R$ 120 a R$ 180</li>
+            <li>Alerta de movimentação</li>
+            <li>Localização em tempo real</li>
+          </ul>
+          <a href="contato.html" class="btn btn-outline btn-block">Contratar</a>
+        </article>
+      </div>
+
+      <div class="section-note reveal">
+        <p>Valores de instalação e mão de obra técnica veicular: consulte em <a href="precos.html#tabela">Preços → Rastreamento</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP / TAG -->
+  <section class="section section-alt" id="app">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Sem instalação</p>
+        <h2 class="section-title">Rastreamento por app e tags</h2>
+        <p class="section-desc">
+          Precisa de rastreio rápido e sem cortar fio? O app vira rastreador e as tags monitoram o que importa.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="f-icon">📱</div>
+          <h3>App Celular</h3>
+          <p>O smartphone se transforma em rastreador, com monitoramento em tempo real em âmbito nacional e internacional — sem equipamento físico.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🏷️</div>
+          <h3>Tag GPS/Bluetooth</h3>
+          <p>Ideal para ativos, ferramentas e cargas. Alerta de movimentação e localização em tempo real, com tag avulsa entre R$ 120 e R$ 180.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🛰️</div>
+          <h3>Plataforma própria</h3>
+          <p>Rota, velocidade, bateria, cercas e histórico direto no navegador — acesse a plataforma quando quiser.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🚨</div>
+          <h3>Pronta resposta</h3>
+          <p>Suporte a guincho e pronta resposta nacional incluso nos planos com rastreador físico.</p>
+        </div>
+      </div>
+      <div class="cta-actions reveal" style="justify-content:center;margin-top:36px">
+        <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Entrar na Plataforma</a>
+        <a href="contato.html" class="btn btn-outline btn-lg">Contratar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="reveal">Quer testar na prática?</h2>
+      <p class="reveal">Acesse a plataforma ao vivo ou fale com a Rastro para agendar a instalação.</p>
+      <div class="cta-actions reveal">
+        <a href="https://wa.me/5531985074136" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">WhatsApp: (31) 98507-4136</a>
+        <a href="precos.html#tab-rastreio" class="btn btn-outline btn-lg">Ver valores</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="brand brand-light">
+          <img src="img/logo-rastro.png" alt="Rastro Sistemas e Tecnologias" class="brand-logo brand-logo-footer">
+        </a>
+        <p class="footer-text">"A inteligência que move o seu negócio." Serviços de TI, desenvolvimento de software e rastreamento veicular avançado.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="rastreamento.html">Rastreamento</a></li>
+          <li><a href="precos.html">Preços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Acesso rápido</h4>
+        <ul class="footer-links">
+          <li><a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener">Área do Cliente ↗</a></li>
+          <li><a href="https://wa.me/5531985074136" target="_blank" rel="noopener">WhatsApp ↗</a></li>
+          <li><a href="tel:+5531985074136">(31) 98507-4136</a></li>
+          <li><a href="tel:+553195804715">(31) 95804-715</a></li>
+          <li><a href="mailto:rastrosistemasetecnologia@gmail.com">rastrosistemasetecnologia@gmail.com</a></li>
+          <li><span>Belo Horizonte &amp; RMBH</span></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Rastro Sistemas e Tecnologias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

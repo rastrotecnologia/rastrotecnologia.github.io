@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serviços de TI, desenvolvimento de software e eletrônica da Rastro Sistemas e Tecnologias — BH e RMBH.">
+  <title>Serviços | Rastro Sistemas e Tecnologias</title>
+  <link rel="icon" type="image/png" href="img/logo-rastro.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-item">📍 Belo Horizonte &amp; RMBH</span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-item">📞 <a href="tel:+5531985074136">(31) 98507-4136</a></span>
+        <span class="topbar-item">✉️ <a href="mailto:rastrosistemasetecnologia@gmail.com">rastrosistemasetecnologia@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-rastro.png" alt="Rastro Sistemas e Tecnologias" class="brand-logo">
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link" data-page="index.html">Início</a>
+        <div class="nav-item has-dropdown">
+          <a href="servicos.html" class="nav-link" data-page="servicos.html">Serviços <span class="caret">▼</span></a>
+          <div class="dropdown">
+            <a href="servicos.html#ti"><span class="d-icon">🖥️</span><span><span class="d-label">TI &amp; Infraestrutura</span><span class="d-sub">Suporte, servidores, redes</span></span></a>
+            <a href="servicos.html#dev"><span class="d-icon">💻</span><span><span class="d-label">Desenvolvimento de Software</span><span class="d-sub">Sistemas, apps, APIs</span></span></a>
+            <a href="servicos.html#eletro"><span class="d-icon">🔌</span><span><span class="d-label">Eletrônica &amp; Infra</span><span class="d-sub">Bancada, rede, rack</span></span></a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="rastreamento.html" class="nav-link" data-page="rastreamento.html">Rastreamento <span class="caret">▼</span></a>
+          <div class="dropdown">
+            <a href="rastreamento.html#planos"><span class="d-icon">🚗</span><span><span class="d-label">Planos</span><span class="d-sub">Anual, mensal, frota</span></span></a>
+            <a href="rastreamento.html#app"><span class="d-icon">📱</span><span><span class="d-label">App Celular &amp; Tag</span><span class="d-sub">Rastreador no smartphone</span></span></a>
+            <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener"><span class="d-icon">🛰️</span><span><span class="d-label">Plataforma do Cliente</span><span class="d-sub">Acessar o sistema ao vivo</span></span></a>
+          </div>
+        </div>
+        <a href="precos.html" class="nav-link" data-page="precos.html">Preços</a>
+        <a href="sobre.html" class="nav-link" data-page="sobre.html">Sobre</a>
+        <a href="contato.html" class="nav-link" data-page="contato.html">Contato</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Área do Cliente</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="m-link" data-page="index.html"><span class="m-icon">🏠</span> Início</a></li>
+      <li>
+        <a href="servicos.html" class="m-link" data-page="servicos.html"><span class="m-icon">🛠️</span> Serviços</a>
+        <div class="m-sub">
+          <a href="servicos.html#ti" data-close>TI &amp; Infraestrutura</a>
+          <a href="servicos.html#dev" data-close>Desenvolvimento de Software</a>
+          <a href="servicos.html#eletro" data-close>Eletrônica &amp; Infra</a>
+        </div>
+      </li>
+      <li>
+        <a href="rastreamento.html" class="m-link" data-page="rastreamento.html"><span class="m-icon">📡</span> Rastreamento</a>
+        <div class="m-sub">
+          <a href="rastreamento.html#planos" data-close>Planos</a>
+          <a href="rastreamento.html#app" data-close>App Celular &amp; Tag</a>
+          <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" data-close>Plataforma do Cliente</a>
+        </div>
+      </li>
+      <li><a href="precos.html" class="m-link" data-page="precos.html"><span class="m-icon">💰</span> Preços</a></li>
+      <li><a href="sobre.html" class="m-link" data-page="sobre.html"><span class="m-icon">🏢</span> Sobre</a></li>
+      <li><a href="contato.html" class="m-link" data-page="contato.html"><span class="m-icon">📞</span> Contato</a></li>
+    </ul>
+    <div class="m-cta">
+      <a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener" class="btn btn-primary btn-block">Área do Cliente</a>
+      <a href="https://wa.me/5531985074136" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">WhatsApp: (31) 98507-4136</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero-eyebrow">O que fazemos</p>
+      <h1>Serviços completos em <span>tecnologia</span></h1>
+      <p>Infraestrutura de TI, engenharia de software e eletrônica — com contrato, SLA e garantia.</p>
+    </div>
+  </section>
+
+  <!-- TI -->
+  <section class="section" id="ti">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">TI &amp; Infraestrutura</p>
+        <h2 class="section-title">Suporte que mantém sua empresa no ar</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="f-icon">🖥️</div>
+          <h3>Contratos mensais</h3>
+          <p>Níveis 1, 2 e 3 com SLA de resposta: suporte remoto ilimitado, preventivas mensais, antivírus e gestão total.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🗄️</div>
+          <h3>Servidores e redes</h3>
+          <p>Montagem de servidores e racks, Windows Server/Linux, AD, GPO, redes estruturadas e cabeamento certificado.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🧰</div>
+          <h3>Manutenção de máquinas</h3>
+          <p>Formatação com backup, limpeza física preventiva, remoção de senha, ativação de licenças e troca de peças.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🌍</div>
+          <h3>Suporte remoto global</h3>
+          <p>Atendimento remoto nacional e internacional, com prioridade para chamados de contrato.</p>
+        </div>
+      </div>
+      <div class="cta-actions reveal" style="justify-content:center;margin-top:36px">
+        <a href="precos.html#tab-ti" class="btn btn-primary">Ver valores de TI</a>
+        <a href="contato.html" class="btn btn-outline">Solicitar orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEV -->
+  <section class="section section-alt" id="dev">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Desenvolvimento de Software</p>
+        <h2 class="section-title">Sistemas sob medida para sua operação</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="f-icon">📦</div>
+          <h3>Sistemas de gestão</h3>
+          <p>Estoque, PDV, CRM, chamados, vendas e vistorias — módulos próprios da Rastro, vitalícios ou mensais.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🤖</div>
+          <h3>Automação e APIs</h3>
+          <p>Fluxos via WhatsApp e e-mail, robôs, integrações entre sistemas e processos automatizados.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">📱</div>
+          <h3>Apps Android</h3>
+          <p>Aplicativos sob medida para a sua empresa, do planejamento à publicação.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🔧</div>
+          <h3>Hardware &amp; firmware</h3>
+          <p>Projetos de placas e firmware sob encomenda, integrados aos seus sistemas.</p>
+        </div>
+      </div>
+      <div class="cta-actions reveal" style="justify-content:center;margin-top:36px">
+        <a href="precos.html#tab-software" class="btn btn-primary">Ver valores de Software</a>
+        <a href="contato.html" class="btn btn-outline">Falar com o time de dev</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELETRO -->
+  <section class="section" id="eletro">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Eletrônica &amp; Infra</p>
+        <h2 class="section-title">Do cabeamento à bancada</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="f-icon">🔌</div>
+          <h3>Rede estruturada</h3>
+          <p>Pontos RJ45 Cat5e/Cat6, tomadas, testes e certificação. Organização de racks e switches.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🛠️</div>
+          <h3>Reparo em bancada</h3>
+          <p>Diagnóstico e reparo eletroeletrônico de placas, fontes, no-breaks e centrais — diagnóstico isento se o orçamento for aprovado.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">🏢</div>
+          <h3>Manutenção predial</h3>
+          <p>Tomadas de TI, quadros e adequações elétricas para equipamentos de tecnologia.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="f-icon">❄️</div>
+          <h3>Ar-condicionado</h3>
+          <p>Instalação, preventiva e higienização para salas de servidores — valores sob consulta (avaliação in loco).</p>
+        </div>
+      </div>
+      <div class="cta-actions reveal" style="justify-content:center;margin-top:36px">
+        <a href="precos.html#tab-infra" class="btn btn-primary">Ver valores de Infra</a>
+        <a href="contato.html" class="btn btn-outline">Pedir avaliação</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="reveal">Não encontrou o que precisa?</h2>
+      <p class="reveal">Serviços sob projeto e atendimento fora da região são orçados sob consulta.</p>
+      <div class="cta-actions reveal">
+        <a href="contato.html" class="btn btn-primary btn-lg">Fale com a gente</a>
+        <a href="precos.html" class="btn btn-outline btn-lg">Ver tabela completa</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="brand brand-light">
+          <img src="img/logo-rastro.png" alt="Rastro Sistemas e Tecnologias" class="brand-logo brand-logo-footer">
+        </a>
+        <p class="footer-text">"A inteligência que move o seu negócio." Serviços de TI, desenvolvimento de software e rastreamento veicular avançado.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="rastreamento.html">Rastreamento</a></li>
+          <li><a href="precos.html">Preços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Acesso rápido</h4>
+        <ul class="footer-links">
+          <li><a href="http://rastro.hopto.org:3001/" target="_blank" rel="noopener">Área do Cliente ↗</a></li>
+          <li><a href="https://wa.me/5531985074136" target="_blank" rel="noopener">WhatsApp ↗</a></li>
+          <li><a href="tel:+5531985074136">(31) 98507-4136</a></li>
+          <li><a href="tel:+553195804715">(31) 95804-715</a></li>
+          <li><a href="mailto:rastrosistemasetecnologia@gmail.com">rastrosistemasetecnologia@gmail.com</a></li>
+          <li><span>Belo Horizonte &amp; RMBH</span></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Rastro Sistemas e Tecnologias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
