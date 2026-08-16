@@ -1,6 +1,6 @@
 # Site Rastro Sistemas e Tecnologias
 
-Site institucional publicado em **https://lucasfdias90.github.io/rastro** via GitHub Pages.
+Site institucional publicado em **https://rastrotecnologia.github.io** via GitHub Pages.
 
 ## Como atualizar o site
 
