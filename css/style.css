@@ -462,9 +462,10 @@ ul {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(1, 12, 24, 0.87), rgba(1, 12, 24, 0.87)),
+    url('img/bg-inicio.jpg');
+  background-size: cover;
+  background-position: center 22%;
   mask-image: radial-gradient(ellipse 90% 80% at 50% 30%, #000 40%, transparent 75%);
   pointer-events: none;
 }
@@ -707,11 +708,40 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(212, 175, 55, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 175, 55, 0.04) 1px, transparent 1px);
-  background-size: 44px 44px;
+  background-image: linear-gradient(rgba(1, 12, 24, 0.9), rgba(1, 12, 24, 0.9));
+  background-size: cover;
+  background-position: center;
   pointer-events: none;
+}
+
+body.page-servicos .page-hero::before {
+  background-image:
+    linear-gradient(rgba(1, 12, 24, 0.9), rgba(1, 12, 24, 0.9)),
+    url('img/bg-servicos.jpg');
+}
+
+body.page-rastreamento .page-hero::before {
+  background-image:
+    linear-gradient(rgba(1, 12, 24, 0.9), rgba(1, 12, 24, 0.9)),
+    url('img/bg-rastreamento.jpg');
+}
+
+body.page-precos .page-hero::before {
+  background-image:
+    linear-gradient(rgba(1, 12, 24, 0.9), rgba(1, 12, 24, 0.9)),
+    url('img/bg-precos.jpg');
+}
+
+body.page-sobre .page-hero::before {
+  background-image:
+    linear-gradient(rgba(1, 12, 24, 0.9), rgba(1, 12, 24, 0.9)),
+    url('img/bg-sobre.jpg');
+}
+
+body.page-contato .page-hero::before {
+  background-image:
+    linear-gradient(rgba(1, 12, 24, 0.9), rgba(1, 12, 24, 0.9)),
+    url('img/bg-contato.jpg');
 }
 
 .page-hero .container {
