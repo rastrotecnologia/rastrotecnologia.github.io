@@ -151,7 +151,7 @@ ul {
 .topbar-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 100%;
   gap: 16px;
 }
@@ -212,7 +212,7 @@ ul {
 }
 
 .brand-logo {
-  height: 46px;
+  height: 54px;
   width: auto;
   object-fit: contain;
   display: block;
