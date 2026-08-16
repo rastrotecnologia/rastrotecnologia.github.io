@@ -482,9 +482,13 @@ ul {
 .hero-inner {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 48px;
   align-items: center;
+}
+
+.hero .container {
+  width: min(1280px, 96%);
 }
 
 .hero-eyebrow,
