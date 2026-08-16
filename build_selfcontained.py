@@ -22,10 +22,10 @@ PAGES = [
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    with io.open(os.path.join(ROOT, 'css', 'style.css'), encoding='utf-8') as f:
-        css = f.read()
-    with io.open(os.path.join(ROOT, 'js', 'main.js'), encoding='utf-8') as f:
-        js = f.read()
+    with io.open(os.path.join(ROOT, 'css', 'style.css'), encoding='utf-8-sig') as f:
+        css = f.read().lstrip('\ufeff')
+    with io.open(os.path.join(ROOT, 'js', 'main.js'), encoding='utf-8-sig') as f:
+        js = f.read().lstrip('\ufeff')
     with io.open(os.path.join(ROOT, 'img', 'logo-rastro-small.png'), 'rb') as f:
         logo_b64 = base64.b64encode(f.read()).decode('ascii')
     logo_uri = 'data:image/png;base64,' + logo_b64
@@ -49,7 +49,7 @@ def main():
         }
 
     for fname, title, path in PAGES:
-        with io.open(os.path.join(ROOT, fname), encoding='utf-8') as f:
+        with io.open(os.path.join(ROOT, fname), encoding='utf-8-sig') as f:
             html = f.read()
         # remove o link de CSS e injeta o CSS inline
         html = re.sub(r'\s*<link rel="stylesheet" href="css/style\.css">', '', html)
