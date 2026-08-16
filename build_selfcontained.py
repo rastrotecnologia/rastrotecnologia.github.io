@@ -4,6 +4,7 @@ import base64
 import io
 import os
 import re
+import shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'deploy_html')
@@ -28,6 +29,13 @@ def main():
     with io.open(os.path.join(ROOT, 'img', 'logo-rastro-small.png'), 'rb') as f:
         logo_b64 = base64.b64encode(f.read()).decode('ascii')
     logo_uri = 'data:image/png;base64,' + logo_b64
+
+    img_out = os.path.join(OUT, 'img')
+    os.makedirs(img_out, exist_ok=True)
+    for name in os.listdir(os.path.join(ROOT, 'img')):
+        if name.lower().endswith(('.png', '.jpg', '.jpeg', '.webp', '.svg')):
+            shutil.copy2(os.path.join(ROOT, 'img', name), os.path.join(img_out, name))
+            print('IMG', name)
 
     rewrites = {}
     if not RELATIVE_LINKS:

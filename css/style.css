@@ -558,6 +558,17 @@ ul {
   position: relative;
 }
 
+.hero-map-img {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--steel-line);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+
 .map-card {
   position: relative;
   aspect-ratio: 4 / 3;
