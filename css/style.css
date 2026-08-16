@@ -1323,7 +1323,7 @@ body.page-contato .page-hero::before {
 .sheet-status.ok .dot { background: var(--gold); }
 
 .download-cat {
-  margin: -8px 0 16px;
+  margin: 0 0 16px;
   font-size: 0.8rem;
 }
 .download-cat a {

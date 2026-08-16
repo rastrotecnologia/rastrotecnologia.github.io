@@ -128,12 +128,6 @@
           html += '<tr><td>' + escapeHtml(serv) + '</td><td>' + escapeHtml(val) + '</td><td>' + escapeHtml(String(get(3))) + '</td></tr>';
         });
         tbody.innerHTML = html;
-
-        var status = document.getElementById('sheetStatus');
-        if (status) {
-          status.classList.add('ok');
-          status.innerHTML = '<span class="dot"></span> Tabela de mão de obra técnica veicular atualizada';
-        }
       })
       .catch(function () { hideSheetStatus(); });
   }
