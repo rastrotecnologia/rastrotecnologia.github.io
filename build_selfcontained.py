@@ -37,6 +37,14 @@ def main():
             shutil.copy2(os.path.join(ROOT, 'img', name), os.path.join(img_out, name))
             print('IMG', name)
 
+    files_src = os.path.join(ROOT, 'files')
+    if os.path.isdir(files_src):
+        files_out = os.path.join(OUT, 'files')
+        os.makedirs(files_out, exist_ok=True)
+        for name in os.listdir(files_src):
+            shutil.copy2(os.path.join(files_src, name), os.path.join(files_out, name))
+            print('FILE', name)
+
     rewrites = {}
     if not RELATIVE_LINKS:
         rewrites = {

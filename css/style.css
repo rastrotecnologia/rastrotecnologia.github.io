@@ -1322,6 +1322,21 @@ body.page-contato .page-hero::before {
 .sheet-status.ok { color: var(--gold-bright); }
 .sheet-status.ok .dot { background: var(--gold); }
 
+.download-cat {
+  margin: -8px 0 16px;
+  font-size: 0.8rem;
+}
+.download-cat a {
+  color: var(--steel-text);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(126, 151, 171, 0.5);
+  transition: color 0.2s ease;
+}
+.download-cat a:hover {
+  color: var(--gold-bright);
+  border-bottom-color: var(--gold);
+}
+
 .price-table {
   width: 100%;
   border-collapse: collapse;
