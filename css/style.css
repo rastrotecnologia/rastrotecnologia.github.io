@@ -561,7 +561,7 @@ ul {
 .hero-map-img {
   display: block;
   width: 100%;
-  max-width: 480px;
+  max-width: 540px;
   margin-left: auto;
   border-radius: var(--radius);
   border: 1px solid var(--steel-line);
