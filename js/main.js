@@ -146,13 +146,7 @@
   }
 
   // ============ Formulário de contato -> notificação por e-mail ============
-  var EMAILJS_PUBLIC_KEY = 'Z8A8cwwIff48BvwZY';
-  var EMAILJS_SERVICE_ID = 'service_yacxe3n';
-  var EMAILJS_TEMPLATE_ID = 'template_dxhewyi';
-
-  if (typeof emailjs !== 'undefined') {
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-  }
+  var FORMSUBMIT_URL = 'https://formsubmit.co/lucasdias.rastro@gmail.com';
 
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
@@ -176,31 +170,20 @@
         status.className = 'form-status error';
       };
 
-      if (EMAILJS_PUBLIC_KEY.indexOf('SEU_') === 0) {
-        var texto =
-          'Olá, Rastro Sistemas e Tecnologias!%0A' +
-          '%0A' + 'Nome: ' + encodeURIComponent(nome) +
-          (empresa ? '%0A' + 'Empresa: ' + encodeURIComponent(empresa) : '') +
-          '%0A' + 'E-mail: ' + encodeURIComponent(email) +
-          '%0A' + 'Telefone: ' + encodeURIComponent(telefone) +
-          '%0A' + 'Mensagem: ' + encodeURIComponent(mensagem);
-        window.open('https://wa.me/5531985074136?text=' + texto, '_blank');
-        pronto();
-        return;
-      }
-
-      if (typeof emailjs === 'undefined') {
-        falhou();
-        return;
-      }
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        from_name: nome,
-        reply_to: email,
-        email: email,
-        company: empresa,
-        phone: telefone,
-        message: mensagem
-      }).then(pronto, falhou);
+      fetch(FORMSUBMIT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nome: nome,
+          telefone: telefone,
+          empresa: empresa,
+          email: email,
+          mensagem: mensagem,
+          _subject: 'Contato do site',
+          _captcha: 'false',
+          _template: 'table'
+        })
+      }).then(function (r) { return r.ok ? pronto() : falhou(); }, falhou);
     });
   }
 
