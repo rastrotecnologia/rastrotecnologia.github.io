@@ -145,7 +145,11 @@
     loadLaborSheet();
   }
 
-  // ============ Formulário de contato -> WhatsApp ============
+  // ============ Formulário de contato -> notificação por e-mail ============
+  var EMAILJS_PUBLIC_KEY = 'Z8A8cwwIff48BvwZY';
+  var EMAILJS_SERVICE_ID = 'service_yacxe3n';
+  var EMAILJS_TEMPLATE_ID = 'template_dxhewyi';
+
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
 
@@ -155,19 +159,44 @@
       var nome = document.getElementById('nome').value.trim();
       var telefone = document.getElementById('telefone').value.trim();
       var empresa = document.getElementById('empresa').value.trim();
+      var email = document.getElementById('email').value.trim();
       var mensagem = document.getElementById('mensagem').value.trim();
 
-      var texto =
-        'Olá, Rastro Sistemas e Tecnologias!%0A' +
-        '%0A' + 'Nome: ' + encodeURIComponent(nome) +
-        '%0A' + 'Telefone: ' + encodeURIComponent(telefone) +
-        (empresa ? '%0A' + 'Empresa: ' + encodeURIComponent(empresa) : '') +
-        '%0A' + 'Mensagem: ' + encodeURIComponent(mensagem);
+      var pronto = function () {
+        status.textContent = 'Mensagem enviada!';
+        status.className = 'form-status success';
+        form.reset();
+      };
+      var falhou = function () {
+        status.textContent = 'Não foi possível enviar. Tente novamente.';
+        status.className = 'form-status error';
+      };
 
-      window.open('https://wa.me/5531985074136?text=' + texto, '_blank');
-      status.textContent = 'Enviado! Abrimos seu WhatsApp para concluir o contato.';
-      status.className = 'form-status success';
-      form.reset();
+      if (EMAILJS_PUBLIC_KEY.indexOf('SEU_') === 0) {
+        var texto =
+          'Olá, Rastro Sistemas e Tecnologias!%0A' +
+          '%0A' + 'Nome: ' + encodeURIComponent(nome) +
+          (empresa ? '%0A' + 'Empresa: ' + encodeURIComponent(empresa) : '') +
+          '%0A' + 'E-mail: ' + encodeURIComponent(email) +
+          '%0A' + 'Telefone: ' + encodeURIComponent(telefone) +
+          '%0A' + 'Mensagem: ' + encodeURIComponent(mensagem);
+        window.open('https://wa.me/5531985074136?text=' + texto, '_blank');
+        pronto();
+        return;
+      }
+
+      if (typeof emailjs === 'undefined') {
+        falhou();
+        return;
+      }
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        from_name: nome,
+        reply_to: email,
+        email: email,
+        company: empresa,
+        phone: telefone,
+        message: mensagem
+      }).then(pronto, falhou);
     });
   }
 
