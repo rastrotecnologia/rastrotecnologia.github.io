@@ -150,6 +150,10 @@
   var EMAILJS_SERVICE_ID = 'service_yacxe3n';
   var EMAILJS_TEMPLATE_ID = 'template_dxhewyi';
 
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
 
